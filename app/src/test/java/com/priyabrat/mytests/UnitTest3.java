@@ -4,27 +4,25 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.fail;
 
 /**
  * Created by PriyabratP on 05-04-2017.
- * Expected Exception Test
+ * Ignore Annotation
  */
 
-public class UnitTest2 {
+public class UnitTest3 {
 
     @BeforeClass
     public static void onBeforeClass(){
         System.out.println("BeforeClass");
     }
-
 
     @AfterClass
     public static void onAfterClass(){
@@ -34,6 +32,7 @@ public class UnitTest2 {
     @Before
     public void onBeforeTest() {
         System.out.println("Before");
+
     }
 
     @After
@@ -42,19 +41,13 @@ public class UnitTest2 {
     }
 
     @Test
-    public void testExpectedExceptionUsingAnnotation(){
-        System.out.println("testExpectedExceptionUsingAnnotation");
-        try{
-            int result = 10/0;
-            //fail();
-        }catch (ArithmeticException e){
-            assertThat(e.toString(),is("/ by zero"));
-        }
+    @Ignore("Not Now")
+    public void onTestOne(){
+        System.out.println("onTestOne");
     }
 
-    @Test(expected = ArithmeticException.class)
-    public void testExpectedExceptionUsingTryCatch(){
-        System.out.println("testExpectedExceptionUsingTryCatch");
-        int result = 10/0;
+    @Test
+    public void onTestAnother(){
+        System.out.println("onTestAnother");
     }
 }

@@ -12,4 +12,8 @@ public class Math {
             sum += Integer.valueOf(summand);
         return sum;
     }
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
 }
