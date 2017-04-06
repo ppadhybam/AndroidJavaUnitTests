@@ -1,4 +1,6 @@
-package com.priyabrat.mytests;
+package com.priyabrat.mytests.junit;
+
+import com.priyabrat.mytests.Person;
 
 import org.junit.After;
 import org.junit.AfterClass;

@@ -1,4 +1,4 @@
-package com.priyabrat.mytests;
+package com.priyabrat.mytests.junit;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -10,7 +10,7 @@ import org.junit.Test;
  * Created by PriyabratP on 05-04-2017.
  */
 
-public class TestLifeCycle {
+public class UnitTestLifeCycle {
 
     private static String name = "Default";
 

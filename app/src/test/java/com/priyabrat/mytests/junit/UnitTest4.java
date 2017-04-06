@@ -1,4 +1,4 @@
-package com.priyabrat.mytests;
+package com.priyabrat.mytests.junit;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -7,25 +7,21 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-
-import static org.junit.Assert.assertEquals;
-
 /**
  * Created by PriyabratP on 05-04-2017.
- * Ignore Annotation
+ * JUnit Parametrized Test
+ * Parameterized via Constructor
  */
 
-public class UnitTest3 {
+public class UnitTest4 {
 
     @BeforeClass
-    public static void onBeforeClass(){
+    public static void onBeforeClass() {
         System.out.println("BeforeClass");
     }
 
     @AfterClass
-    public static void onAfterClass(){
+    public static void onAfterClass() {
         System.out.println("AfterClass");
     }
 
@@ -36,18 +32,17 @@ public class UnitTest3 {
     }
 
     @After
-    public void onAfterTest(){
+    public void onAfterTest() {
         System.out.println("After");
     }
 
     @Test
-    @Ignore("Not Now")
-    public void onTestOne(){
+    public void onTestOne() {
         System.out.println("onTestOne");
     }
 
     @Test
-    public void onTestAnother(){
+    public void onTestAnother() {
         System.out.println("onTestAnother");
     }
 }

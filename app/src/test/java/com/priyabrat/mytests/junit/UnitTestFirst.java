@@ -1,4 +1,6 @@
-package com.priyabrat.mytests;
+package com.priyabrat.mytests.junit;
+
+import com.priyabrat.mytests.Math;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -10,11 +12,10 @@ import static org.junit.Assert.assertEquals;
  */
 
 
-public class FirstTest {
+public class UnitTestFirst {
 
     @Before
     public void before(){
-
     }
 
     @Test

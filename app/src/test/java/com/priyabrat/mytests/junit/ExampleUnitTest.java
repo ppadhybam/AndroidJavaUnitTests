@@ -1,4 +1,4 @@
-package com.priyabrat.mytests;
+package com.priyabrat.mytests.junit;
 
 import org.junit.Test;
 

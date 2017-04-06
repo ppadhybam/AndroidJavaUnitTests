@@ -16,4 +16,13 @@ public class Math {
     public static int add(int a, int b) {
         return a + b;
     }
+
+    public boolean isEvenNumber(int number){
+        if(number%2 == 0){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
